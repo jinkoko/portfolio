@@ -1,0 +1,660 @@
+*{margin: 0; padding: 0;}/*전체선택자*/
+
+
+      @media screen and (min-width:1024px){
+
+      }/*브라우저 사이즈가 1024 이하
+일 경우*/
+
+
+body{
+          width:100%;
+          font-family: 맑은고딕;
+}
+img{border:0; margin:0px; padding: 0;}
+ul, li{list-style-type:none;}
+
+header {
+        margin: 0 auto;
+		height:70px;
+        background-color: #333;
+        width:1200px;
+      }
+
+section{ 
+    margin : 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+.logoPng{
+    margin: 3px 60px 0 50px;
+    width: 20px;
+    height: 25px;
+}
+.logo [href] {
+          display: inline;
+          float: left;
+          text-decoration:none;
+          margin-top: 18px;
+          color:#fff;
+      }
+.navi ul li:first-child{
+    margin-left: 60px;
+}
+  .header1{
+          float: right;
+          width:80px;
+          color:#fff;
+      }
+
+    .header1 li{
+          font-size: 10px;
+          list-style: none;
+          float: left;
+          margin-top: -20px;
+      }
+    .header1 a{
+          color:#fff;
+          text-decoration:none;
+      }
+    .navi{
+        text-align: center;
+		height:70px;
+ 	}
+.navi ul{
+    overflow: hidden;
+		list-style: none;
+	}
+.navi ul li{
+    overflow: hidden;
+    display: inline;
+    float:left;
+}
+.navi ul li a[href]{
+  position: relative;
+        padding: 10px 10px;
+		font-size:12px;
+        text-align: center;
+        color:#fff;
+		width: 120px;
+        transition: ease-out 0.3s 0.1s;
+        -moz-transition: ease-out 0.3s 0.1s;
+        -o-transition: ease-out 0.3s 0.1s;
+        -webkit-transition: ease-out 0.3s;
+        -webkit-transition-delay: 0.1s;
+}
+.navi ul li a::after {
+  height: 1px;
+  width: 40%;
+  background: white;
+  content: "";
+  position: absolute;
+  left: 42px;
+  bottom: 0;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+	.navi ul li a:hover::after{
+		color:#999;
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+	}
+
+.backkk{
+    background-color: #fafafa;
+    width: 100%;
+    height: 500px;
+}
+.sub2Banner{
+    overflow: hidden;
+    width: 1200px;
+    height: 500px;
+    margin: 20px auto 0 auto;
+    clear: both;
+}
+
+
+   input{display:none}/*라디오버튼 안보이게*/
+
+    .rradio{ /*버튼 위치 이동하기 컬러 속성*/
+	  position:relative;
+	  left:577px;
+	  top:465px;
+	  float:left;
+	  width:10px;
+	  height:10px;
+	  margin-left:5px;
+	  cursor:pointer;
+	  text-align:center;
+	  background:#fff;
+	  z-index:1000;
+        border: 1px solid tomato;
+	  border-radius:50%;
+}
+        
+  .bannerImg{
+      position:absolute;
+	  width:1200px;
+	  height:500px;
+	  overflow:hidden;
+}
+  
+  .bannerImg li{
+     position:absolute;
+	 top:0px;
+	 left:1200px;}/*이미지 위치
+  left:300px은 위에 이미지 위드값 300px와 동일하게 적용해야 사이즈에 맞게 넘어감*/
+
+    input:nth-of-type(1):checked ~ .rradio:nth-of-type(1),
+    input:nth-of-type(2):checked ~ .rradio:nth-of-type(2),
+    input:nth-of-type(3):checked ~ label:nth-of-type(3){color:red;background:tomato;}/*버튼*/
+
+    input:nth-of-type(1):checked ~.bannerImg li:nth-of-type(1),
+    input:nth-of-type(2):checked ~.bannerImg li:nth-of-type(2),
+    input:nth-of-type(3):checked ~.bannerImg li:nth-of-type(3){
+
+   -webkit-animation:none;animation:none;
+   -webkit-transition:left 0.5s ease-in-out;
+           transition:left 0.5s ease-in-out;
+           left:0;
+           z-index:10;
+    }
+
+        /* 기존 이미지 왼쪽으로 사라지게 하기*/
+        input:checked ~.bannerImg li{
+		-webkit-animation:slideOut 1s ease-in-out none;
+		animation:slideOut 1s ease-in-out none;}
+		/* 애니메이션 */
+     @keyframes slideOut{
+            0%{left:0px}
+            100%{left:-1200px}
+        }
+
+
+.M1{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.mainBanner1{
+    width: 1200px;
+    height: 590px;
+    background: url(images/UntitledBack.png) no-repeat;
+}
+.mainBanner2-1{
+    width: 500px;
+    margin: 103px 0 0 80px;
+    float: left;
+    transition: all 0.3s ease-out;
+    -webkit-transition:all 0.3s ease-out;
+    -moz-transition:all 0.3s ease-out;
+    -o-transition:all 0.3s ease-out;
+    -ms-transition:all 0.3s ease-out;
+}
+
+.qwer{
+    float: left;
+    width: 300px;
+    padding-top: 20px;
+}
+.qwer1{
+    float: left;
+    position: relative;
+    font-size: 40px;
+    top: 120px;
+    left: -70px;
+    color: #fff;transition: all 0.4s ease-out;
+    -webkit-transition:all 0.4s ease-out;
+    -moz-transition:all 0.4s ease-out;
+    -o-transition:all 0.4s ease-out;
+    -ms-transition:all 0.4s ease-out;
+}
+.redLogo{
+    float: left;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+    left: 110px;
+    color: #fff;transition: all 0.4s ease-out;
+    -webkit-transition:all 0.4s ease-out;
+    -moz-transition:all 0.4s ease-out;
+    -o-transition:all 0.4s ease-out;
+    -ms-transition:all 0.4s ease-out;
+}
+.qwer2{
+    float: left;
+    position: relative;
+    font-size: 40px;
+    top: 120px;
+    left: 250px;
+    color: #fff;
+    transition: all 0.4s ease-out;
+    -webkit-transition:all 0.4s ease-out;
+    -moz-transition:all 0.4s ease-out;
+    -o-transition:all 0.4s ease-out;
+    -ms-transition:all 0.4s ease-out;
+}
+.M1:hover .qwer1,.M1:hover .redLogo{
+    transition: transform 0.3s ease-out, opacity 0.5s ease;
+  transform: translateX(140px);
+}
+.M1:hover .qwer2{
+    transition: transform 0.3s ease-out, opacity 0.5s ease;
+  transform: translateX(-100px);
+}
+.M1:hover .mainBanner2-1{
+    
+    transform: scale(1.1);
+}
+.qwer3{
+    float: left;
+    position: relative;
+    font-size: 20px;
+    top: 140px;
+    left: 120px;
+}
+.qwer4{
+    float: left;
+    position: relative;
+    font-size: 12px;
+    top: 300px;
+    left: 30px;
+}
+.qwer4:hover{
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.qwer5{
+    float: left;
+    display: block;
+    width: 380px;
+    height: 50px;
+    line-height: 20px;
+    position: relative;
+    font-size: 12px;
+    top: 150px;
+    left: 120px;
+    color: #fff;
+}
+.tomato{
+    clear: both;
+    float: left;
+    width: 1200px;
+    height: 450px;
+    margin: 50px auto 0 auto;
+}
+.M1-1{
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+    clear: both;
+}
+
+.wrap
+{
+  margin:0 auto;
+  width:1200px;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+.tile
+{
+  width:380px;
+  height:380px;
+  margin:10px;
+  display:inline-block;
+  background-size:cover;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  padding:30px;
+  height:calc(100% - 60px);
+}
+
+.no2 h1, .no2 h4, .no2 p{
+    color: #333;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+ .no1 h4, .no1 p, .no3 h1, .no3 h4, .no3 p{
+    color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+.tile h1
+{
+  font-weight:300;
+  margin:0;
+}
+.tile h4
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+p{
+  font-size: 12px;
+}
+.no1{
+  background: url(images/why_switch_large_B.jpg);
+    transform:translate(0%,0%) rotate(16deg) scale(0.85);
+}
+.no1:hover{
+  background-image: url(images/why_switch_large.jpg);
+  transform:translate(0%,0%) rotate(0deg);
+}
+.no2{
+  background: url(images/airpods_large_B.jpg);
+    transform:translate(0%,0%)rotate(-30deg) scale(0.7);
+}
+
+.no2:hover{
+  background-image: url(images/airpods_large.jpg);
+  transform:translate(0%,0%) rotate(0deg);
+}
+.no3{
+  background: url(images/accessories_large_B.jpg);
+    transform:translate(0%,0%) rotate(23deg) scale(0.8);
+}
+.no3:hover{
+  background-image: url(images/accessories_large.jpg);
+  transform:translate(0%,0%) rotate(0deg);
+}
+.tile:hover .animate-text{
+  transform:translateX(0);
+  opacity:1;
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+
+
+.M2{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+.att{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 400px;
+    background: url(images/ipod_large.png) 50% 0 ;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    cursor: pointer;
+}
+.attH{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+  font: 77px /1 "Oswald", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0;
+  padding-top: 140px;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  line-height: 100px;
+  -webkit-text-fill-color: #333;
+    cursor: pointer;
+}
+
+.fond{
+    width: 1200px;
+    margin: 50px auto 0 auto;}
+
+.style_prevu{
+    display:inline-block;
+    border:0;
+    width:290px;
+    height:290px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.eyebrow{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 6px;
+}
+.kit1{
+    background:url(images/family-1-large-1x.jpg);
+}
+.Text1, .Text3{
+    display: inline;
+}
+.Text2,.Text4{
+    display: inline;
+    color: #fff;
+}
+.kit2{
+    background:url(images/family-2-large-1x.jpg);
+}
+.kit3{
+    background:url(images/family-3-large-1x.jpg);
+}
+.kit4{
+    background:url(images/family-4-large-1x.jpg);
+}
+
+.style_prevu:hover
+{
+    box-shadow: 0px 0px 10px #fff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+
+.album{
+    margin-bottom: 20px;
+    width: 300px;
+}
+.miri{
+    margin-bottom: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.miri:hover{
+    text-decoration: underline;
+}
+
+.watch{
+    width: 1200px;
+    height: 707px;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+    background: url(images/background.png) repeat;
+}
+.mini{
+    overflow: hidden;
+    width: 600px;
+        cursor: pointer;
+    float: left;
+    transition: all 2s ease;
+}
+
+.Banner3{
+    background: url(images/hermes_dt_1_large.png) no-repeat;
+    width: 600px;
+    height: 707px;
+}
+.Banner4{
+    background: url(images/edition_2_buy_large.png) no-repeat;
+    width: 600px;
+    height: 707px;
+}
+.Banner3:hover{
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+}
+.Banner4:hover{
+    transform: scale(1.15);
+    -webkit-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+}
+.aaa{
+    width: 406px;
+    height: 41px;
+    background: url(images/iHERMES.png) no-repeat;
+    margin: 400px 0 0 100px;
+    position: relative;
+    cursor: pointer;
+}
+.bbb{
+    width: 406px;
+    height: 41px;
+    background: url(images/i_EDITION.png) no-repeat;
+    margin:0 0 0 700px;
+    position: relative;
+    top: -42px;
+    cursor: pointer;
+}
+footer{
+    overflow: hidden;
+    clear: both;
+    background-color: #eeeeee;
+    margin-top: 20px;
+}
+
+.footerA{
+    clear: both;
+    width: 1200px;
+    height: 210px;
+    margin: 0 auto;
+}
+.footerA_1{
+    float: left;
+    overflow: hidden;
+    width: 240px;
+    height: 210px;
+}
+.fInfoBox{
+    float: left;
+    display: inline;
+    padding: 16px 0 0 60px;
+    line-height: 17px;
+}
+.fInfoBox li{
+    float: left;
+    font-size: 11px;
+    display: block;
+    width: 100%;
+}
+.fInfoBox li a{
+    text-decoration: none;
+    color: #333;
+}
+.fInfoBox li a:hover{
+    text-decoration: underline;
+}
+.fInfoBox li a:visited{
+    color : #333;
+}
+.fInfoBox li:nth-child(1){margin-left:0px;}
+.aBlank{
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+}
+.footerB{
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+}
+.mainFoot{
+    padding: 0 10px;
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+}
+.call{
+    float:left;
+    width: 1200px;
+    height: 30px;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    font-size: 10px;
+    color: #555;
+    line-height: 20px;
+}
+.m_hide{
+    float:left;
+    margin: 10px 0 0 0;
+    width: 1200px;
+    font-size: 10px;
+    color: #555;
+    line-height: 20px;
+    font-style: normal;
+}
+.copylight{
+    float:left;
+    margin: 5px 0 0 0;
+    font-size: 11px;
+}
+

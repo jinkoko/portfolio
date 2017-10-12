@@ -1,0 +1,285 @@
+    *{margin: 0; padding: 0;}/*전체선택자*/
+body {
+  background:url(images/a.png) no-repeat;
+    background-size: 100% 100%;
+  overflow:hidden;
+}
+ @font-face {
+	font-family: 'NanumGothic';
+	src:url("fonts/NanumGothic.eot" , "fonts/NanumGothic.woff");
+}
+ @font-face {
+	font-family: 'NanumGothicBold';
+	src:url("fonts/NanumGothicBold.eot" , "fonts/NanumGothicBold.woff");
+}
+ @font-face {
+	font-family: 'NanumGothicExtraBold';
+	src:url("fonts/NanumGothicExtraBold.eot" , "fonts/NanumGothicExtraBold.woff");
+}
+ @font-face {
+	font-family: 'NanumGothicLight';
+	src:url("fonts/NanumGothicLight.eot" , "fonts/NanumGothicLight.woff");
+}
+.scene{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.scene > div {
+  position:absolute;
+  bottom:0;
+}
+
+.scene > div.bowlingBall {
+  width:895px;
+  left:50%;
+    top:14%;
+  height:300px;
+  bottom:250px;
+  background:url(images/bowlingBall.png) no-repeat center;
+    background-size: 280px;
+    z-index: 101;
+}
+.scene div.bowlingBallShadow {
+  width:895px;
+  left:55%;
+    top:50%;
+  margin-left:-447px;
+  height:300px;
+  bottom:250px;
+  background:url(images/bowlingBallShadow.png) no-repeat center;
+    background-size: 350px;
+}
+.bowlingPin {  
+  width:763px;
+  height:726px;  
+  left:35%;
+  top: 6%;
+  margin-left:-400px;
+  background:url(images/bowlingPin.png) no-repeat center;
+    background-size: 550px;
+ }
+.leftTop{
+    float: left;
+    color: #fff;
+    width: 80px;
+    height: 350px;
+    margin: 50px 0 50px 100px;
+}
+.bigBar{
+    float: left;
+    width: 50px;
+    border: 6px solid #fff;
+    margin: 15px 0 8px 0;
+}
+
+.bigText{
+    width: 80px;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+
+}
+.smallBar{
+    float: left;
+    width: 50px;
+    border: 4px solid #fff;
+    margin-top: 14px;
+}
+.smallText{
+    float: left;
+    margin: 285px 0 0 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.mainText{
+    position: relative;
+    width: 60%;
+    margin: 200px 0 0 -300px;
+    z-index: 100;
+}
+.ground {
+  width:100%;
+  height:240px;
+    color: #464646;
+}
+.blank{
+        width: 60%;
+        height: 100%;}
+.round{
+    float: right;
+    overflow: hidden;
+    width: 40%;
+    height: 225px;
+    position:absolute;
+    right:0px;
+    bottom:15px;
+}
+
+.intro1, .intro2{
+    float: left;
+    width: 35%;
+    height: 100px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 50px 30px 0 -35px ;
+}
+.intro2{
+    margin-left: 0px;
+}
+
+.section2 {
+    background:url(images/b.png) no-repeat;
+    background-size: 100% 100%; 
+}
+.area1{
+    height: 730px;
+}
+.area2{
+    height: 245px;
+}
+.ground2 {
+  width:100%;
+  height:240px;
+    color: #464646;
+    position: relative;
+}
+.round2{
+    float: right;
+    overflow: hidden;
+    width: 40%;
+    height: 225px;
+    position:absolute;
+    right:0px;
+    bottom:15px;
+}
+.leftTop2{
+    float: left;
+    color: #fff;
+    width: 80px;
+    height: 350px;
+    margin: 50px 0 50px 100px;
+}
+.bigBar2{
+    float: left;
+    width: 50px;
+    border: 6px solid #fff;
+    margin: 15px 0 8px 0;
+}
+
+.bigText2{
+    width: 80px;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    margin-left: 0px;
+}
+.smallBar2{
+    float: left;
+    width: 50px;
+    border: 4px solid #fff;
+    margin-top: 14px;
+}
+.smallText2{
+    float: left;
+    margin: 285px 0 0 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.ground3 {
+  width:100%;
+  height:250px;
+    color: #464646;
+    position: relative;
+}
+.round3{
+    float: right;
+    overflow: hidden;
+    width: 40%;
+    height: 230px;
+    position:absolute;
+    right:0px;
+    bottom:20px;
+}
+.bottonBar{
+    width: 28px;
+    border: 2px solid #464646;
+    margin:50px 0 0 100px;
+}
+.bottonNum{
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin:0 0 0 100px;
+}
+.bottonBar{
+    width: 28px;
+    border: 2px solid #464646;
+    margin:50px 0 0 100px;
+}
+.bottonNum2{
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin:0 0 0 100px;
+}
+.intro1_2, .intro2_2{
+    float: left;
+    width: 35%;
+    height: 100px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 50px 30px 0 -35px ;
+}
+.intro2_2{
+    margin-left: 0px;
+}
+.profile{
+    width: 302px;
+    margin: 0 0 0 70.1%;
+    padding-top: 80px;
+}
+.section3 {
+    background:url(images/c.png) no-repeat;
+    background-size: 100% 100%;
+}
+.tenPlace{
+    width: 1050px;
+    height: 520px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.firstBox{
+    float: left;
+    width: 1050px;
+}
+.secondBox{
+    float: left;
+    width: 1050px;
+}
+.place{
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+.web{
+    list-style: none;}
+.bottonNum3{
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin:0 0 0 100px;
+}
+.intro1_3, .intro2_3{
+    float: left;
+    width: 35%;
+    height: 100px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 50px 30px 0 -35px ;
+}
+.intro2_3{
+    margin-left: 0px;
+}
